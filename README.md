@@ -24,8 +24,9 @@ https://www.cram.com/flashcards/9-securing-layer-2-devices-7190486
     d. Port security
 
 **What does STP root guard do? Enforces the root bridge placement in network:**
-**Which one is not a best practice for security?
-a. √ Leaving the native VLAN as VLAN 1
+**Which one is not a best practice for security?**
+
+    a. √ Leaving the native VLAN as VLAN 1
     b. Shutting down all unused ports and placing them in an unused VLAN
     c. Limiting the number of MAC addresses learned on a specific port
     d. Disabling negotiation of switch port mode
@@ -51,7 +52,7 @@ a. √ Leaving the native VLAN as VLAN 1
     b. Use a remote default gateway
     c. √ Use a local default gateway
     d. Use trunking on the PC
-8
+
 **Which 2 configuration changes prevent users from jumping onto any VLAN they choose to join?**
 
     a. √ Disabling negotiation of trunk ports
