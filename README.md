@@ -596,6 +596,7 @@ https://www.cram.com/flashcards/14-understanding-firewall-fundamentals-7190521
  - allows different inspection policies applied to many host groups on the same interface
  - protocol specific, granular control
  - in default, security zones are deny-ed to communicate intercontinentally 
+
 **CBAC model:**
  - running on routers are ACLs that just filters based on application types or ip address
  - easier on memory and CPU usage
