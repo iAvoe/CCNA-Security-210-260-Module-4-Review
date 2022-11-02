@@ -438,18 +438,20 @@ https://www.cram.com/flashcards/13-securing-routing-protocols-and-the-control-pl
     d. Transit subinterface
 
 **Which line in the following OSPF configuration will not be required for MD5 auth to work?**
-interface GigabitEthernet0/1
- ip address 192.168.10.1 255.255.255.0
- ip ospf authentication message-digest
- ip ospf message-digest-key 1 md5 CCNA
-!
-router ospf 65000
- router-id 192.168.10.1
- area 20 authentication message-digest
- network 10.1.1.0 0.0.0.255 area 10
- network 192.168.10.0 0.0.0.255 area 0
-!
-a. ip ospf authentication message-digest
+
+    interface GigabitEthernet0/1
+     ip address 192.168.10.1 255.255.255.0
+     ip ospf authentication message-digest
+     ip ospf message-digest-key 1 md5 CCNA
+    !
+    router ospf 65000
+     router-id 192.168.10.1
+     area 20 authentication message-digest
+     network 10.1.1.0 0.0.0.255 area 10
+     network 192.168.10.0 0.0.0.255 area 0
+    !
+
+    a. ip ospf authentication message-digest
     b. network 192.168.10.0 0.0.0.255 area 0
     c. √ area 20 authentication message-digest
     d. ip ospf message-digest-key 1 md5 CCNA
