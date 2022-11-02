@@ -1,99 +1,99 @@
-# CCNS-Securit-210-260-Module-4-Review
+# CCNA-Security-210-260-Module-4-Review
 ### 9 Securing Layer 2 Devices
 https://www.cram.com/flashcards/9-securing-layer-2-devices-7190486
 
 **Which is the primary Layer 2 mechanism that allows multiple devices in the same VLAN to communicate with each other even though those devices are physically connected to different switches?**
 
     a. IP address
-    b.	Default gateway
-    c.	√ Trunk (802.1Q)
-    d.	802.1D
+    b. Default gateway
+    c. √ Trunk (802.1Q)
+    d. 802.1D
 
 **How does a switch know about parallel Layer 2 paths?**
 
     a. √ 802.1Q (trunk)
-    b.	BPDU
-    c.	CDP
-    d.	NTP
+    b. BPDU
+    c. CDP
+    d. NTP
 
 **Which one helps prevent CAM table (MAC address table) overflows?**
 
     a. 802.1w
-    b.	√ BPDU Guard
-    c.	Root Guard
-    d.	Port security
+    b. √ BPDU Guard
+    c. Root Guard
+    d. Port security
 
 **What does STP root guard do? Enforces the root bridge placement in network:**
 **Which one is not a best practice for security?
-a.	√ Leaving the native VLAN as VLAN 1
-    b.	Shutting down all unused ports and placing them in an unused VLAN
-    c.	Limiting the number of MAC addresses learned on a specific port
-    d.	Disabling negotiation of switch port mode
+a. √ Leaving the native VLAN as VLAN 1
+    b. Shutting down all unused ports and placing them in an unused VLAN
+    c. Limiting the number of MAC addresses learned on a specific port
+    d. Disabling negotiation of switch port mode
 
 **What is the default # of MAC addr allowed on a switch port that is configured with port security?**
 
     a. √ 1
-    b.	5
-    c.	15
-    d.	Depends on the switch mode
+    b. 5
+    c. 15
+    d. Depends on the switch mode
 
 **Which two items normally have a one-to-one correlation?**
 
     a. √ VLANs
-    b.	Classful IP networks
-    c.	√ IP subnetworks
-    d.	Number of switches
-    e.	Number of routers
+    b. Classful IP networks
+    c. √ IP subnetworks
+    d. Number of switches
+    e. Number of routers
 
 **Typical method for a device in VLAN to reach another device in a 2nd VLAN?**
 
     a. ARP for the remote device's MAC address
-    b.	Use a remote default gateway
-    c.	√ Use a local default gateway
-    d.	Use trunking on the PC
+    b. Use a remote default gateway
+    c. √ Use a local default gateway
+    d. Use trunking on the PC
 8
 **Which 2 configuration changes prevent users from jumping onto any VLAN they choose to join?**
 
     a. √ Disabling negotiation of trunk ports
-    b.	Using something else other than VLAN 1 as the "native" VLAN
-    c.	Configuring the port connecting to the client as a trunk
-    d.	√ Configuring the port connecting to the client as an access port
+    b. Using something else other than VLAN 1 as the "native" VLAN
+    c. Configuring the port connecting to the client as a trunk
+    d. √ Configuring the port connecting to the client as an access port
 
 **If you limit the number of MAC addresses learned on a port to 5, what benefits do you get from it? (Choose all that apply.)**
 
     a. √ Protection for DHCP servers against starvation attacks
-    b.	Protection against IP spoofing
-    c.	Protection against VLAN hopping
-    d.	Protection against MAC address spoofing
-    e.	√ Protection against CAM table overflow attacks
+    b. Protection against IP spoofing
+    c. Protection against VLAN hopping
+    d. Protection against MAC address spoofing
+    e. √ Protection against CAM table overflow attacks
 
 **Why should you implement Root Guard on a switch?**
 
     a. To prevent the switch from becoming the root
-    b.	To prevent the switch from having any root ports
-    c.	√ To prevent the switch from having specific root ports
-    d.	To protect the switch against MAC address table overflows
+    b. To prevent the switch from having any root ports
+    c. √ To prevent the switch from having specific root ports
+    d. To protect the switch against MAC address table overflows
 
 **Why should CDP be disabled on ports that face untrusted networks?**
 
     a. CDP can be used as a DDoS vector.
-    b.	√ CDP can be used as a reconnaissance tool to determine info about the device
-    c.	Disabling it prevents the device from participating in spanning tree w/ untrusted devices.
-    d.	CDP can conflict with LLDP on ports facing untrusted networks
+    b. √ CDP can be used as a reconnaissance tool to determine info about the device
+    c. Disabling it prevents the device from participating in spanning tree w/ untrusted devices.
+    d. CDP can conflict with LLDP on ports facing untrusted networks
 
 **Which of the following is not a true statement for DHCP snooping?**
 
     a. DHCP snooping validates DHCP messages received from untrusted sources, which filters invalid messages
-    b.	DHCP snooping information is stored in a binding database.
-    c.	√ DHCP snooping is enabled by default on all VLANs.
-    d.	DHCP snooping rate-limits DHCP traffic from trusted and untrusted sources.
+    b. DHCP snooping information is stored in a binding database.
+    c. √ DHCP snooping is enabled by default on all VLANs.
+    d. DHCP snooping rate-limits DHCP traffic from trusted and untrusted sources.
 
 **Which of the following is not a true statement regarding dynamic ARP inspection (DAI)?**
 
     a. DAI intercepts, logs, and discards ARP packets with invalid IP-to-MAC address bindings.
-    b.	DAI helps to mitigate MITM attacks.
-    c.	DAI determines validity of ARP packets based on IP-to-MAC address bindings found in the DHCP snooping database.
-    d.	√ DAI is enabled on a per-interface basis
+    b. DAI helps to mitigate MITM attacks.
+    c. DAI determines validity of ARP packets based on IP-to-MAC address bindings found in the DHCP snooping database.
+    d. √ DAI is enabled on a per-interface basis
 
 **If there is no 802.1Q tag on the frame, what will the switch assume?** This frame originates from native VLAN
 
@@ -114,85 +114,91 @@ https://www.cram.com/flashcards/10-network-foundation-protection-7190492
 **Which one is not a core element addressed by Network Foundation Protection?**
 
     a. Management plane
-    b.	Control plane
-    c.	Data plane
-    d.	√ Executive plane
+    b. Control plane
+    c. Data plane
+    d. √ Executive plane
 
 **If you add authentication to your routing protocol so that only trusted authorized routers share information, which plane in the NFP are you securing?**
 
     a. Management plane
-    b.	√ Control plane
-    c.	Data plane
-    d.	Executive plane
+    b. √ Control plane
+    c. Data plane
+    d. Executive plane
 
 **If you use authentication and authorization services to control which administrators can access which networked devices and control what they are allowed to do, which primary plane of NFP are you protecting?**
 
     a. √ Management plane
-    b.	Control plane
-    c.	Data plane
-    d.	Executive plane
+    b. Control plane
+    c. Data plane
+    d. Executive plane
 
 **Which of the following is not a best practice to protect the management plane? (Choose all that apply.)**
 
     a. √ HTTP
-    b.	√ Telnet
-    c.	HTTPS
-    d.	SSH
+    b. √ Telnet
+    c. HTTPS
+    d. SSH
 
 **Which of the following is a way to implement role-based access control related to the management plane? (Choose all that apply.)**
 
     a. √ Views
-    b.	√ AAA services
-    c.	Access lists
-    d.	IPS
+    b. √ AAA services
+    c. Access lists
+    d. IPS
 
 **What do Control Plane Policing (CoPP) & Control-Plane Protection (CPPr) have in common? (Choose all that apply.)**
 
     a. They both focus on data plane protection.
-    b.	They both focus on management plane protection.
-    c.	√ They both focus on control plane protection.
-    d.	√ They both can identify traffic destined for the router that will likely require direct CPU resources to be used by the router
+    b. They both focus on management plane protection.
+    c. √ They both focus on control plane protection.
+    d. √ They both can identify traffic destined for the router that will likely require direct CPU resources to be used by the router
 
 **Which type of attack can you mitigate by authenticating a routing protocol? (Choose all that apply.)**
 
     a. √ MITM (reconnaissance + spoofing by hiding & forwarding inbetween 2 links)
-    b.	√ Denial-of-service attack (halting system resources)
-    c.	√ Reconnaissance attack (gathering information for vulnerability)
-    d.	Spoofing attack (identifies as another by falsifying data)
+    b. √ Denial-of-service attack (halting system resources)
+    c. √ Reconnaissance attack (gathering information for vulnerability)
+    d. Spoofing attack (identifies as another by falsifying data)
 
 **What is a significant difference between CoPP and CPPr?**
 
     a. One works at Layer 3, and the other works at Layer 2.
-    b.	√ CPPr can classify and act on more-specific traffic than CoPP.
-    c.	CoPP can classify and act on more-specific traffic than CPPr.
-    d.	One protects the data plane, and the other protects the management plane
+    b. √ CPPr can classify and act on more-specific traffic than CoPP.
+    c. CoPP can classify and act on more-specific traffic than CPPr.
+    d. One protects the data plane, and the other protects the management plane
 
 **Which of the following enables you to protect the data plane?**
 
     a. √ IOS zone-based firewall
-    b.	√ IPS
-    c.	√ Access lists
-    d.	√ Port security
+    b. √ IPS
+    c. √ Access lists
+    d. √ Port security
 
 **DHCP snooping protects which component of NFP?:**
 
     a. Management plane
-    b.	Control plane
-    c.	√ Data plane
-    d.	Executive plane
+    b. Control plane
+    c. √ Data plane
+    d. Executive plane
 
 **Define management plane:** protocols, traffic that administrator uses
+
 **Define control plane:** protocols, traffic that network devices use on their own automatically
+
 **Define data plane:** common network data user uses
+
 **Define role-based access control:** on management plane, permission given depend on corresponding roles of logged user
 
 **Management plane security measures:** AAA, NTP, SSH, SSL/TLS, syslog, SNMPv3, PARSER VIEWS, bitlocker
+
 **Control plane security measures:** Ctrl plane policing (CoPP) & Ctrl Plane Protection (CPPr)
+
 **Data plane security measures:** ACL, VLAN, STP guards, IPS, Firewall
 
 **How to keep constant times across network devices:** network time protocol (NTP)
 
 **Which version of SNMP has encryption & authentication:** SNMPv3
+
 **How to manage user accounts that need to connect to network devices:** AAA services and manage them from an Automatic Configuration Server (ACS) (e.g., RADIUS). This keeps an audit trail of users who logged in
 
 **Define control plane policing:** Managing router and switches in regards of traffic, e.g., QoS, BPDU guard, DHCP snooping, limit bandwidth on ports, etc
@@ -360,17 +366,23 @@ W**hy is tunneling any protocol (including IPv6) through another protocol a secu
 **Does IPv6 support NAT?** No
 
 **IPv6 address is split in two parts called:** Network ID, Host ID
+
 **How can you shorten IPv6 addresses?** Drop leading 0's, consecutive 0's shortened to ::
+
 **What is the loopback IPv6?** ::1. (127 0's followed by a 1)
+
 **What is the all-nodes multicast address?** Multicasts begin with FFxx:. Usually FF02::1
 
 **What does the system automatically configure when setting IPv6 on an interface?**
+
  - A link local address starting with FE80
 
 **How do you reach remote networks with IPv6:**
+
  - Need to have a default route to that network or default gateway.
 
 **What is a link local address?**
+
  - May be manually configured, but if not are dynamically configured by host/router.
  - Used for network discovery and self-configuration when DHCP is down
  - Always begin with FE80. Last 64 bits are the host ID.
@@ -382,23 +394,23 @@ https://www.cram.com/flashcards/13-securing-routing-protocols-and-the-control-pl
 **Which of the following functions is not handled by the control plane?**
 
     a. BGP
-    b.	RSVP
-    c.	√ SSH (management plane)
-    d.	ICMP
+    b. RSVP
+    c. √ SSH (management plane)
+    d. ICMP
 
 **Which command provides information on receive adjacency traffic?**
 
     a. show ip bgp
-    b.	show processes cpu
-    c.	show interfaces summary
-    d.	√ show ip cef
+    b. show processes cpu
+    c. show interfaces summary
+    d. √ show ip cef
 
 **Control plane policing helps to protect the CPU by doing what?**
 
     a. Diverting all control plane traffic to the data and management planes
-    b.	√ Filtering and rate-limiting traffic destined to the control plane
-    c.	Rate-limiting SNMP traffic to reduce the impact on the CPU
-    d.	Throttling all traffic ingressing the device during heavy traffic periods until the CPU performance has improved
+    b. √ Filtering and rate-limiting traffic destined to the control plane
+    c. Rate-limiting SNMP traffic to reduce the impact on the CPU
+    d. Throttling all traffic ingressing the device during heavy traffic periods until the CPU performance has improved
 
 **In the following CoPP access control list example, which traffic is being prevented from reaching the control plane?**
 Extended IP access list 123
@@ -407,17 +419,17 @@ Extended IP access list 123
  30 permit tcp any any eq telnet
  40 permit udp any any eq domain
  50 deny ip any any
-a.	Telnet traffic from the 192.168.1.0/24
-    b.	√ Telnet and DNS traffic from outside the 192.168.1.0./24 subnet
-    c.	Telnet and DNS traffic from the 192.168.1.0/24 subnet
-    d.	DNS traffic from the 192.168.1.0/24 subnet
+a. Telnet traffic from the 192.168.1.0/24
+    b. √ Telnet and DNS traffic from outside the 192.168.1.0./24 subnet
+    c. Telnet and DNS traffic from the 192.168.1.0/24 subnet
+    d. DNS traffic from the 192.168.1.0/24 subnet
 
 **Which of the following is not a sub-interface that can be leveraged as part of control plane protection?**
 
     a. Host subinterface
-    b.	√ Frame Relay subinterface
-    c.	CEF-Exception subinterface
-    d.	Transit subinterface
+    b. √ Frame Relay subinterface
+    c. CEF-Exception subinterface
+    d. Transit subinterface
 
 **Which line in the following OSPF configuration will not be required for MD5 auth to work?**
 interface GigabitEthernet0/1
@@ -431,33 +443,34 @@ router ospf 65000
  network 10.1.1.0 0.0.0.255 area 10
  network 192.168.10.0 0.0.0.255 area 0
 !
-a.	ip ospf authentication message-digest
-    b.	network 192.168.10.0 0.0.0.255 area 0
-    c.	√ area 20 authentication message-digest
-    d.	ip ospf message-digest-key 1 md5 CCNA
+a. ip ospf authentication message-digest
+    b. network 192.168.10.0 0.0.0.255 area 0
+    c. √ area 20 authentication message-digest
+    d. ip ospf message-digest-key 1 md5 CCNA
 
 **Which of the following pairs of statements is true in terms of configuring MD5?**
 
     a. Interface statements (OSPF, EIGRP) must be configured; use of key chain in OSPF
-    b.	Router process (OSPF, EIGRP) must be configured; key chain in EIGRP
-    c.	√ Router process (only for OSPF) must be configured; key chain in EIGRP
-    d.	Router process (only for OSPF) must be configured; key chain in OSPF
+    b. Router process (OSPF, EIGRP) must be configured; key chain in EIGRP
+    c. √ Router process (only for OSPF) must be configured; key chain in EIGRP
+    d. Router process (only for OSPF) must be configured; key chain in OSPF
 
 **Which of the following statements is true?**
 
     a. RIPv1 supports cleartext authentication, and RIPv2 supports MD5 authentication.
-    b.	RIPv2 and OSPF make use of a key chain for authentication.
-    c.	RIPv2 and EIGRP both require router process configuration for authentication.
-    d.	√ RIPv2 and EIGRP both make use of a key chain for authentication.
+    b. RIPv2 and OSPF make use of a key chain for authentication.
+    c. RIPv2 and EIGRP both require router process configuration for authentication.
+    d. √ RIPv2 and EIGRP both make use of a key chain for authentication.
 
 **What is needed to implement MD5 authentication for BGP?**
 
     a. Interface and router process configuration
-    b.	Interface and key chain configuration
-    c.	√ Router process configuration
-    d.	Router process and key chain configuration
+    b. Interface and key chain configuration
+    c. √ Router process configuration
+    d. Router process and key chain configuration
 
 **What is process switched traffic?** Type of packets that are blocked to save CPU load
+
 **Define the 2 types of switched traffic:**
  - received from adjacency
  - data plane traffic requiring special processing by the CPU
@@ -468,6 +481,7 @@ a.	ip ospf authentication message-digest
 
 ### 14A - Understanding Firewall Fundamentals
 https://www.cram.com/flashcards/14-understanding-firewall-fundamentals-7190521
+
 **Which firewall method requires the adminto know & config all the specific ports, IPs, and protocols required for the firewall?**
 
     a. AGL
@@ -568,6 +582,7 @@ https://www.cram.com/flashcards/14-understanding-firewall-fundamentals-7190521
 **Define zone policy firewall (ZPF) / zone based firewall (ZBF):** Improved older interface-based model to a more flexible, more easily understood zone-based configuration model. Interfaces are assigned to zones, and an inspection policy is applied to traffic moving between the zones.
 
 **How is the ZPF model inherently different from the context-based access control (CBAC)?**
+
 **ZPF model:**
  - operates as a function of interfaces, which is better integrated than ACLs
  - allows different inspection policies applied to many host groups on the same interface
@@ -594,68 +609,74 @@ Block ICMP from public internet
 **How to setup ZPF from IOS?**
 https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-answers.html
 
-1.	**Create security zones**
-R3(config)# zone security INSIDE
-R3(config)# zone security CONFROOM
-R3(config)# zone security INTERNET
+1. **Create security zones**
 
-2.	**Create security policies depends on zones and protocols (class maps)**
-R3(config)# class-map type inspect match-any INSIDE_PROTOCOLS
-R3(config-cmap)# match protocol tcp
-R3(config-cmap)# match protocol udp
-R3(config-cmap)# match protocol icmp
+    R3(config)# zone security INSIDE
+    R3(config)# zone security CONFROOM
+    R3(config)# zone security INTERNET
 
-R3(config)# class-map type inspect match-any CONFROOM_PROTOCOLS
-R3(config-cmap)# match protocol http
-R3(config-cmap)# match protocol https
-R3(config-cmap)# match protocol dns
+2. **Create security policies depends on zones and protocols (class maps)**
 
-3.	**Create policy maps**
-R3(config)# policy-map type inspect INSIDE_TO_INTERNET
-R3(config-pmap)# class type inspect INSIDE_PROTOCOLS
-R3(config-pmap-c)# inspect
-R3(config)# policy-map type inspect CONFROOM_TO_INTERNET
-R3(config-pmap)# class type inspect CONFROOM_PROTOCOLS
-R3(config-pmap-c)# inspect
+    R3(config)# class-map type inspect match-any INSIDE_PROTOCOLS
+    R3(config-cmap)# match protocol tcp
+    R3(config-cmap)# match protocol udp
+    R3(config-cmap)# match protocol icmp
 
-4.	**Create zone pairs**
-R3(config)# zone-pair security INSIDE_TO_INTERNET source INSIDE destination INTERNET
-R3(config)# zone-pair security CONFROOM_TO_INTERNET source CONFROOM destination INTERNET
-R3# show zone-pair security
-Zone-pair name INSIDE_TO_INTERNET
-    Source-Zone INSIDE  Destination-Zone INTERNET
-    service-policy not configured
-Zone-pair name CONFROOM_TO_INTERNET
-    Source-Zone CONFROOM  Destination-Zone INTERNET
-    service-policy not configured
+    R3(config)# class-map type inspect match-any CONFROOM_PROTOCOLS
+    R3(config-cmap)# match protocol http
+    R3(config-cmap)# match protocol https
+    R3(config-cmap)# match protocol dns
 
-5.	**Applying Security Policies**
-R3(config)# zone-pair security INSIDE_TO_INTERNET
-R3(config-sec-zone-pair)# service-policy type inspect INSIDE_TO_INTERNET
-R3(config)# zone-pair security CONFROOM_TO_INTERNET
-R3(config-sec-zone-pair)# service-policy type inspect CONFROOM_TO_INTERNET
+3. **Create policy maps**
 
-R3#show zone-pair security 
-Zone-pair name INSIDE_TO_INTERNET
-    Source-Zone INSIDE  Destination-Zone INTERNET 
-    service-policy INSIDE_TO_INTERNET
-Zone-pair name CONFROOM_TO_INTERNET
-    Source-Zone CONFROOM  Destination-Zone INTERNET 
-    service-policy CONFROOM_TO_INTERNET
+    R3(config)# policy-map type inspect INSIDE_TO_INTERNET
+    R3(config-pmap)# class type inspect INSIDE_PROTOCOLS
+    R3(config-pmap-c)# inspect
+    R3(config)# policy-map type inspect CONFROOM_TO_INTERNET
+    R3(config-pmap)# class type inspect CONFROOM_PROTOCOLS
+    R3(config-pmap-c)# inspect
 
-R3#show policy-map type inspect zone-pair
+4. **Create zone pairs**
 
-6.	**Assign interfaces to zones**
-R3(config)# interface g0/0
-R3(config-if)# zone-member security CONFROOM
+    R3(config)# zone-pair security INSIDE_TO_INTERNET source INSIDE destination INTERNET
+    R3(config)# zone-pair security CONFROOM_TO_INTERNET source CONFROOM destination INTERNET
+    R3# show zone-pair security
+    Zone-pair name INSIDE_TO_INTERNET
+        Source-Zone INSIDE  Destination-Zone INTERNET
+        service-policy not configured
+    Zone-pair name CONFROOM_TO_INTERNET
+        Source-Zone CONFROOM  Destination-Zone INTERNET
+        service-policy not configured
 
-R3(config)# interface g0/1
-R3(config-if)# zone-member security INSIDE
+5. **Applying Security Policies**
 
-R3(config)# interface s0/0/1
-R3(config-if)# zone-member security INTERNET
+    R3(config)# zone-pair security INSIDE_TO_INTERNET
+    R3(config-sec-zone-pair)# service-policy type inspect INSIDE_TO_INTERNET
+    R3(config)# zone-pair security CONFROOM_TO_INTERNET
+    R3(config-sec-zone-pair)# service-policy type inspect CONFROOM_TO_INTERNET
 
-R3# show zone security
+    R3#show zone-pair security 
+    Zone-pair name INSIDE_TO_INTERNET
+        Source-Zone INSIDE  Destination-Zone INTERNET 
+        service-policy INSIDE_TO_INTERNET
+    Zone-pair name CONFROOM_TO_INTERNET
+        Source-Zone CONFROOM  Destination-Zone INTERNET 
+        service-policy CONFROOM_TO_INTERNET
+
+    R3#show policy-map type inspect zone-pair
+
+6. **Assign interfaces to zones**
+
+    R3(config)# interface g0/0
+    R3(config-if)# zone-member security CONFROOM
+
+    R3(config)# interface g0/1
+    R3(config-if)# zone-member security INSIDE
+
+    R3(config)# interface s0/0/1
+    R3(config-if)# zone-member security INTERNET
+
+    R3# show zone security
 
 **What is the goal of NAT?** Translates addresses from the private space to the public internet, but bad for security
 
@@ -863,10 +884,10 @@ https://quizlet.com/226530774/cisco-ipsids-fundamentals-flash-cards/
 **Which of the following are properties directly associated with a signature? (Choose all that apply.)**
 
     a. √ ASR (Alert Severity Rating)
-    b.	ARR (Attack Relevancy Rating)
-    c.	√ SFR (Signature Fidelity Rating)
-    d.	TVR (Target Value Rating)
-    e.	RR (Risk Rating)
+    b. ARR (Attack Relevancy Rating)
+    c. √ SFR (Signature Fidelity Rating)
+    d. TVR (Target Value Rating)
+    e. RR (Risk Rating)
 
 Note:
 75—Low Asset Value
