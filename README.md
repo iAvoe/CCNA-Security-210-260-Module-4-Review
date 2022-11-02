@@ -188,18 +188,21 @@ d.	Executive plane
 https://www.cram.com/flashcards/11-securing-the-management-plane-on-ios-7190502
 
 **Which one of the following follows best practices for a secure password?**
+
   a. ABC123!
   b. √ SlE3peR1#
   c. tough-passfraze
   d. InterEstIng-PaSsWoRd
 
 **When you connect for the first time to the console port on a new router, which privilege level are you using initially when presented with the command-line interface?**
+
   a. 0
   b. √ 1
   c. 15
   d. 16
 
 **Which of the following is not impacted by a default login authentication method list?**
+
   a. AUX line
   b. √ HDLC interface
   c. Vty line
@@ -207,42 +210,49 @@ https://www.cram.com/flashcards/11-securing-the-management-plane-on-ios-7190502
 
 **You are trying to configure a method list, and your syntax is correct, but the command is not being accepted.**
 **Which of the following might cause this failure? (Choose all that apply.)**
+
   a. √ Incorrect privilege level
   b. √ AAA not enabled
   c. √ Wrong mode
   d. √ Not allowed by the view
 
 **Cisco recommends which version of Simple Network Management Protocol (SNMP) on your network if you need it?**
+
   a. Version 1
   b. Version 2
   c. √ Version 3
   d. Version 4
 
 **How can you implement role-based access control (RBAC)? (Choose all that apply.)**
+
   a. √ Provide the password for a custom privilege level to users in a given role
   b. √ Associate user accounts with specific views
   c. Use access lists to specify which devices can connect remotely
   d. √ Use AAA to authorize specific users for specific sets of permissions
 
 **Which of the following indirectly requires the administrator to configure a hostname?**
+
   a. Telnet
   b. HTTP
   c. HTTPS
   d. √ SSH
 
 **What are the two primary benefits of using NTP along with a syslog server? (Choose all that apply.)**
+
   a. √ Correlation of syslog messages from multiple different devices
   b. Grouping of syslog messages into summary messages
   c. Synchronization in the sending of syslog messages to avoid congestion
   d. √ Accurate accounting of when a syslog message occurred
 
 **Which of the following commands result in a secure bootset? (Choose all that apply.)**
+
   a. secure boot-set
   b. √ secure boot-config
   c. secure boot-files
   d. √ secure boot-image
 
 **What is a difference between a default and named method list?**
+
   a. A default method list can contain up to four methods.
   b. A named method list can contain up to four methods.
   c. A default method list must be assigned to an interface or line.
@@ -256,60 +266,70 @@ https://www.cram.com/flashcards/11-securing-the-management-plane-on-ios-7190502
 https://www.cram.com/flashcards/12-securing-the-data-plane-in-ipv6-7190509
 
 **Which of the following are the valid first 4 characters of a globally routable IPv6 address? (Choose all that apply.)**
+
   a. 1234
   b. √ 2345
   c. √ 3456
   d. 4567
 
 **Which of the following are the valid first four characters of a link-local address?**
+
   a. √ FE80
   b. FF02
   c. 2000
   d. 3000
 
 **What is the default method for determining the interface ID for a link-local address on Ethernet?**
+
   a. √ EUI-64
   b. MAC address with FFFE at the end
   c. MAC address with FFFE at the beginning
   d. Depends on the network address being connected to
 
 **How many groups of four hexadecimal characters does an IPv6 address contain?**
+
   a. 4
   b. √ 8
   c. √ 16
   d. 32
 
 **Which of the following routing protocols have both an IPv4 and IPv6 version? (Choose all that apply.)**
+
   a. √ Routing Information Protocol (RIP)
   b. √ Enhanced Interior Gateway Routing Protocol (EIGRP)
   c. √ Open Shortest Path First (OSPF)
   d. Interior Gateway Routing Protocol (IGRP)
 
 **Which best practices apply to networks that run both IPv4 and IPv6? (Choose all that apply.)**
+
   a. √ Physical security
   b. √ Routing protocol authentication
   c. √ Authorization of administrators
   d. √ Written security policy
 
 **Which of protocols, if abused, could impair an IPv6 network, but not IPv4? (Choose all that apply.)**
+
   a. ARP
   b. √ NDP
   c. Broadcast addresses
   d. √ Solicited node multicast addresses
 
 **If a rogue IPv6 router is allowed on the network, which information could be incorrectly delivered to the clients on that network? (Choose all that apply.)**
+
   a. √ IPv6 default gateway
   b. √ IPv6 DNS server
   c. √ IPv6 network address
   d. IPv6 ARP mappings
 
 W**hy is tunneling any protocol (including IPv6) through another protocol a security risk?**
+
   a. √ The innermost contents of the original packets may be hidden from normal security filters.
   b. √ The tunnels, if they extend beyond the network perimeter, may allow undesired traffic through the tunnel.
   c. Functionality might need to be sacrificed when going through a tunnel.
   d. Quality of service, for the underlying protocol, might be compromised.
 
 **What is one method to protect against a rogue IPv6 router?**
+
   a. Port security
   b. Static ARP entries
   c. DHCPv6
@@ -420,48 +440,56 @@ d.	Router process and key chain configuration
 ### 14A - Understanding Firewall Fundamentals
 https://www.cram.com/flashcards/14-understanding-firewall-fundamentals-7190521
 **Which firewall method requires the adminto know & config all the specific ports, IPs, and protocols required for the firewall?**
+
   a. AGL
   b. √ Packet filtering
   c. Stateful filtering
   d. Proxy server
 
 **Which technology dynamically builds a table for the purpose of permitting the return traffic from an outside server, back to the client, in spite of a default security policy that says no traffic is allowed to initiate from the outside networks?**
+
   a. Proxy
   b. NAT
   c. Packet filtering
   d. √ Stateful filtering
 
 **What does application layer inspection provide?**
+
   a. Packet filtering at Layer 5 and higher
   b. √ Enables a firewall to listen in on a client/server communication, looking for information regarding communication channels
   c. Proxy server functionality
   d. Application layer gateway functionality
 
 **Which one of the following is true about a transparent firewall?**
+
   a. Implemented at Layer 1
   b. Implemented at Layer 2
   c. √ Implemented at Layer 3
   d. Implemented at Layer 4 and higher
 
 **What is the specific term for performing NAT for multiple inside devices but optimizing the number of global addresses required?**
+
   a. NAT-T
   b. NAT
   c. √ PAT
   d. PAT-T
 
 **What term refers to the internal IP address of a client using NAT as seen from other devices on the same internal network as the client?**
+
   a. √ Inside local
   b. Inside global
   c. Outside local
   d. Outside global
 
 **Which of the following describes a rule on the firewall which will never be matched because of where the firewall is in the network?**
+
   a. √ Orphaned rule
   b. Redundant rule
   c. Shadowed rule
   d. Promiscuous rule
 
 **What is the long-term impact of providing a promiscuous rule as a short-term test in an attempt to get a network application working?**
+
   a. √ The promiscuous rule may be left in place, leaving a security hole.
   b. The rule cannot be changed later to more accurately filter based on the business req
   c. It should be a shadowed rule.
@@ -622,48 +650,56 @@ R3# show zone security
 https://quizlet.com/403509604/ccna-security-15-flash-cards/
 
 **Which zone is implied by default and does not need to be manually created?**
+
   a. Inside-zone
   b. Outside-zone
   c. DMZ
   d. √ Self-zone
 
 **If interface number 1 is in zone A, and interface number 2 is in zone B, and there are no policy or service commands applied yet to the configuration, what is the status of transit traffic that is being routed between these two interfaces?**
+
   a. √ Denied
   b. Permitted
   c. Inspected
   d. Logged
 
 **When creating a specific zone pair and applying a policy to it, policy is being implemented on initial traffic in how many directions?**
+
   a. 1
   b. 2
   c. 3
   d. Depends on the policy
 
 **What is the default policy between an administratively created zone and the self-zone?**
+
   a. Deny
   b. Permit
   c. Inspect
   d. Log
 
 **What is one of the added configuration elements that the Advanced security setting has in the ZBF Wizard that is not included in the Low security setting?**
+
   a. Generic TCP inspection
   b. Generic UDP inspection
   c. √ Filtering of peer-to-peer networking applications
   d. NAT
 
 **Why is it that the return traffic, from previously inspected sessions, is allowed back to the user, in spite of not having a zone pair explicitly configured that matches on the return traffic?**
+
   a. √ Stateful entries (from the initial flow) are matched, which dynamically allows return traffic.
   b. Return traffic is not allowed because it is a firewall.
   c. Explicit ACL rules need to be placed on the return path to allow the return traffic.
   d. A zone pair in the opposite direction of the initial zone pair (including an applied policy) must be applied for return traffic to be allowed.
 
 **What does the keyword overload imply in a NAT configuration?**
+
   a. NAT is willing to take up to 100 percent of available CPU.
   b. PAT is being used.
   c. NAT will provide "best effort" but not guaranteed service, due to an overload.
   d. Static NAT is being used
 
 **Which of the following commands shows the current NAT translations on the router?**
+
   a. show translations
   b. show nat translations
   c. √ show ip nat translations
@@ -673,60 +709,70 @@ https://quizlet.com/403509604/ccna-security-15-flash-cards/
 https://quizlet.com/178121211/ccna-security-ocg-do-i-know-this-already-31-days-study-guide-flash-cards/
 
 **Which of the following features does the Cisco ASA provide? (Choose all that apply.)**
+
   a. √ Simple packet filtering using standard or extended access lists
   b. √ Layer 2 transparent implementation
   c. √ Support for remote-access SSL VPN connections
   d. Support for site-to-site SSL VPN connections
 
 **Which of the following Cisco ASA models are designed for small and branch offices? (Choose all that apply.)**
+
   a. √ 5505
   b. √ 5512-X
   c. 5555-X
   d. 5585-X with SSP10
 
 **When used in an access policy, which component could identify multiple servers?**
+
   a. Stateful filtering
   b. Application awareness
   c. √ Object groups
   d. DHCP services
 
 **Which one is accurate description of the word inbound as it relates to Cisco Adaptive Security Appliance (ASA)? (Choose all that apply.)**
+
   a. Traffic from a device that is located on a high-security interface
   b. √ Traffic from a device that is located on a low-security interface
   c. √ Traffic that is entering any interface
   d. Traffic that is exiting any interface
 
 **When is traffic allowed to be routed & forwarded if the source of the traffic is from a device located off of a low-security interface if the destination device is located off of a high-security interface? (Choose all that apply.)**
+
   a. This traffic is never allowed.
   b. √ This traffic is allowed if the initial traffic was inspected and this traffic is the return traffic.
   c. √ If there is an access list that is permitting this traffic.
   d. This traffic is always allowed by default.
 
 **Which of the following tools could be used to configure or manage an ASA? (Choose all that apply.)**
+
   a. √ Cisco Security Manager (CSM)
   b. √ ASA Security Device Manager (ASDM)
   c. Cisco Configuration Professional (CCP)
   d. √ The command-line interface (CLI)
 
 **Which of the following elements, which are part of the Modular Policy Framework on the ASA, are used to classify traffic?**
+
   a. √ Class maps
   b. Policy maps
   c. Service policies
   d. Stateful filtering
 
 **When you configure the ASA as a DHCP server for a small office, what default gateway will be assigned for the DHCP clients to use?**
+
   a. The service provider's next-hop IP address.
   b. The ASA's outside IP address.
   c. √ The ASA's inside IP address.
   d. Clients need to locally configure a default gateway value
 
 **When you configure network address translation for a small office, devices on the Internet will see the ASA inside users as coming from which IP address?**
+
   a. The inside address of the ASA.
   b. √ The outside address of the ASA.
   c. The DMZ address of the ASA.
   d. Clients will each be assigned a unique global address, one for each user.
 
 **You are interested in verifying whether the security policy you implemente  d. **How can you verify this without involving end users?**
+
   a. Run the policy check tool, which is built in to the ASA.
   b. The ASA automatically verifies that policy matches intended rules.
   c. √ Use Packet Tracer
@@ -736,6 +782,7 @@ https://quizlet.com/178121211/ccna-security-ocg-do-i-know-this-already-31-days-s
 https://quizlet.com/226530774/cisco-ipsids-fundamentals-flash-cards/
 
 **Which method should you implement when it is not acceptable for an attack to reach its intended victim?**
+
   a. IDS
   b. √ IPS
   c. Out of band
@@ -743,36 +790,42 @@ https://quizlet.com/226530774/cisco-ipsids-fundamentals-flash-cards/
 
 **A company has hired you to determine whether attacks are happening against the server farm, and it does not want any additional delay added to the network.**
 **Which deployment method should be used?**
+
   a. Appliance-based inline
   b. IOS software-based inline
   c. Appliance-based IPS
   d. √ IDS
 
 **Why does IPS have the ability to prevent an ICMP-based attack from reaching the intended victim?**
+
   a. Policy-based routing.
   b. TCP resets are used.
   c. √ The IPS is inline with the traffic.
   d. The IPS is in promiscuous mode.
 
 **Which method of IPS uses a baseline of normal network behavior and looks for deviations from that baseline?**
+
   a. Reputation-based IPS
   b. √ Policy-based IPS
   c. Signature-based IPS
   d. Anomaly-based IPS
 
 **Which type of implementation requires custom signatures to be created by the administrator?**
+
   a. √ Reputation-based IPS
   b. Policy-based IPS
   c. Engine-based IPS
   d. Anomaly-based IPS
 
 **Which method requires participation in global correlation involving groups outside your own enterprise?**
+
   a. √ Reputation-based IPS
   b. Policy-based IPS
   c. Signature-based IPS
   d. Anomaly-based IPS
 
 **Which of the micro-engines contains signatures that can only match on a single packet, as opposed to a flow of packets?**
+
   a. √ Atomic
   b. String
   c. Flood
@@ -792,18 +845,21 @@ Note:
 200—Mission Critical Asset Value
 
 **Which of the following is not a best practice?**
+
   a. Assign aggressive IPS responses to specific signatures
   b. Assign aggressive IPS responses based on the resulting risk rating generated by the attack
   c. Tune the IPS and revisit the tuning process periodically
   d. Use correlation within the enterprise and globally for an improved security posture
 
 **What is the name of Cisco cloud-based services for IPS correlation?**
+
   a. √ SIO
   b. EBAY
   c. ISO
   d. OSI
 
 **Which of the following is not a Next-Generation IPS (NGIPS) solution?**
+
   a. NGIPSv
   b. ASA with FirePOWER
   c. √ SIO IPS
@@ -812,36 +868,42 @@ Note:
 ### Unlisted - Advanced Switch Security (only 58% was correct)
 
 **What is the easiest way for an attacker to perform VLAN hopping?**
+
   a. Perform DHCP starvation
   b. √ Negotiate a trunk using the connection to the access switch
   c. Use multiple virtual machines on the same access port
   d. Implement MAC flooding
 
 **If a switch is working in the fail-open mode, what will happen when the switch’s CAM table fills to capacity and a new frame arrives?**
+
   a. The switch sends a NACK segment to the frame’s source MAC address.
   b. √? A copy of the frame is forwarded out all switch ports other than the port the frame was received on.
   c. The frame is dropped.
   d. The frame is transmitted on the native VLAN.
 
 **___________ are dynamically learned and stored only in the address tabl  e. MAC addresses configured in this way are removed when the switch restarts.**
+
   a. Static secure MAC address
   b. √? Dynamic secure MAC address
   c. Sticky secure MAC address
   d. Pervasive secure MAC address
 
 **Why is BPDU guard an effective way to prevent an unauthorized rogue switch from altering the spanning-tree topology of a network?**
+
   a. BPDU guard can guarantee proper selection of the root bridge.
   b. √? BPDU guard can be utilized along with PortFast to shut down ports when a switch is connected to the port.
   c. BPDU guard can be utilized to prevent the switch from transmitteing BPDUs and incorrectly altering the root bridge election.
   d. BPDU guard can be used to prevent invalid BPDUs from propagating throughout the network.
 
 **How does a switch react when an attacker has flooded the CAM table on the device and the switch receives a unicast frame?**
+
   a. √? The switch floods the frame.
   b. The switch redirects the frame out the port it was received.
   c. The switch drops the frame.
   d. The switch buffers the frame until the CAM is no longer full.
 
 **Which description correctly describes a MAC address flooding attack?**
+
   a. The attacking device crafts ARP replies intended for valid hosts. The MAC address of the attacking device then becomes the destination address found in the Layer 2 frames sent by the valid network device.
   b. The attacking device crafts ARP replies intended for valid hosts. The MAC address of the attacking device then becomes the source address found in the Layer 2 frames sent by the valid network device.
   c. The attacking device spoofs a destination MAC address of a valid host currently in the CAM tabl  e. The switch then forwards frames destined for the valid host to the attacking device.
@@ -850,16 +912,19 @@ Note:
   f. √? Frames with unique, invalid source MAC addresses flood the switch and exhaust CAM table spac  e. The result is that new entries cannot be inserted because of the exhausted CAM table space, and traffic is subsequently flooded out all ports.
 
 **Which type of Layer 2 attack causes a switch to flood all incoming traffic to all ports?**
+
   a. MAC spoofing attack
   b. √? CAM overflow attack
   c. VLAN hopping attack
   d. STP attack
  
 **Characteristic of the double-encapsulated VLAN hopping attack is that it works even if trunk ports are disabled.**
+
   a. √? True
   b. False
 
 **When the MAC table is full, the switch enters into what is known as a ________, and starts acting as a hub, broadcasting packets to all the machines on the network.**
+
   a. failed-open mode
   b. failure-open mode
   c. √? fail-open mode
@@ -867,6 +932,7 @@ Note:
   e. fail-close mode
 
 **The BPDU guard feature disables which kind of port when the port receives a BPDU packet?**
+
   a. any port
   b. nonegotiate port
   c. √? access port
@@ -874,6 +940,7 @@ Note:
   e. root port
 
 **Which statement is currect about Layer 2 security threats?**
+
   a. MAC spoofing attacks allow an attacking device to receive frames intended for a different network host.
   b. Port scanners are the most effective defense against dynamic ARP inspection.
   c. √? MAC spoofing, in conjunction with ARP snooping, is the most effective counter-measure against reconnaissance attacks that use dynamic ARP inspection (DAI) to determine vulnerable attack points.
@@ -905,6 +972,7 @@ Total MAC Adresses         :** 0
 Configured MAC Addresses   :** 0
 Sticky MAC Addresses       :** 0
 **What of attack would be mitigated by this configuration?**
+
   a. ARP spoofing
   b. MAC spoofing
   c. VLAN hopping
@@ -920,18 +988,21 @@ Switch(config-if)# no switchport
 Switch(config-if)# ip address 192.20.135.21 255.255.255.0
 Switch(config-if)# no shut
 **What can you determine Level 3 routing functionality of the interface?**
+
   a. The interface is configured correctly for Layer 3 routing capabilities.
   b. √? The interface needs an additional configuration entry to enable IP routing protocols.
   c. The interface subcommand ip routing is required to enable IP routing on the interface.
   d. An SVI interface is required to enable IP routing for network 192.20.135.0.
 
 **If you change the native VLAN on the trunk port to an unused VLAN, what happens if an attacker attempts a double-tagging attack?**
+
   a. The trunk port would go into an error-disabled state.
   b. A VLAN hopping attack would be successful.
   c. √? A VLAN hopping attack would be prevented.
   d. The attacked VLAN will be pruned.
 
 **What could prevent users from jumping onto any VLAN they choose to join? (Choose all that appliy.)**
+
   a. √? Configuring the port connecting to the client as an access port
   b. √? Disabling negotiation of trunk ports
   c. Using something else other than VLAN 1 as the "native" VLAN
@@ -943,28 +1014,33 @@ R1(config)#aaa new-model
 R1(config)#exit
 R1#
 **What command would be the next to create a custom parser view?**
+
   a. √ parser view
   b. enable view
   c. view enable
   d. configure terminal
 
 **Which of the following features cannot protect the data plane?**
+
   a. √? policing
   b. ACLs
   c. IPS
   d. DHCP-snooping
 
 **Which feature is a potential security weakness of a traditional stateful firewall?**
+
   a. It cannot ensure each TCP connection follows a legitimate TCP three-way handshake.
   b. It cannot detect application-layer attacks.
   c. √? It cannot support UDP flows.
   d. The status of TCP sessions is retained in the state table after the sessions terminate.
 
 **When using the ASA Security Appliance as a DHCP server you can configure static address assignments as well as dynamic address assignments from a pool of contiguous IP addresses.**
+
   a. √? True
   b. False
 
 **Which of the following commands will reset the ASA back to its factory default settings on a Cisco ASA 5510?**
+
   a. √? write erase
   b. copy factory-config startup-config
   c. configure factory-default
@@ -973,6 +1049,7 @@ R1#
   f. restore factory-default
 
 **On the Cisco ASA, what is the default access rule if no user defined access lists are defined on interface?**
+
   a. All inbound connections from the lower security interfaces to the higher security interfaces are permitted.
   b. All outbound connections from the higher security interfaces to the lower security interfaces are permitted.
   c. All IP traffic between interfaces with the same security level are permitted.
@@ -980,6 +1057,7 @@ R1#
   e. √? All IP traffic is denied.
 
 **Which of the following enables RIPv2 on an ASA?**
+
   a. ripv2 enable
   b. router ripv2
   c. √? router rip
@@ -987,6 +1065,7 @@ R1#
   d. router rip
 
 **By default, which access rule is applied inbound to the inside interface?**
+
   a. √? All IP traffics are denied.
   b. All IP traffic is permitted.
   c. All IP traffic sourced from any source to any less secure network destinations is permitted.
@@ -999,10 +1078,12 @@ R1#
   b. False
 
 **After you have configured access to the HTTP server, you also have to add the host that you wish to connect to the firewall's access lists.**
+
   a. √? True
   b. False
 
 **Which of the following interfaces should normally be assigned a security level of 100?**
+
   a. outside
   b. dmz
   c. dmz2
@@ -1010,6 +1091,7 @@ R1#
   e. It doesn't matter because you can assign any level you want.
 
 **Which statement about the Cisco ASA 5505 configuration is true?**
+
   a. The IP address is configured under the physical interface (ethernet 0/0 to ethernet 0/7).
   b. With the default factory configuration, the management interface (management 0/0) is configured with the 192.168.1.1/24 IP address.
   c. With the default factory configuratoin, Cisco ASDM access is not enabled.
@@ -1033,6 +1115,7 @@ Flash boot interrupted
 4:** i8255x @ PCI(bus:1 dev:2 irq:11)
 5:** i8255x @ PCI(bus:1 dev:3 irq:11)
 **The firewall is running in which mode?**
+
   a. Unprivileged mode
   b. Privileged mode
   c. Configuration mode
@@ -1069,6 +1152,7 @@ Firewall(config-if)# ip address
 172.18.1.1
   255.255.0.0
 **Which software version is this Cisco Security Appliance OS running at?**
+
   a. PIX 5.1
   b. PIX 6.5
   c. PIX 6.3
@@ -1083,16 +1167,19 @@ C 128.163.93.128 255.255.255.128 is directly connected, outside
 S* 0.0.0.0 0.0.0.0 [1/0] via 128.163.93.129, outside
 Firewall#
 **Which software version is this Cisco Security Appliance OS running at?**
+
   a. PIX 6.3
   b. √? ASA
 
 **In a Zone-Based Firewall which action(s) permit the traffic from firewall in the direction of zone pair? (Choose all that apply.)**
+
   a. Permit
   b. √ Inspect
   c. Prioritize
   d. √ Pass
 
 **In legacy Cisco IPS, when does a signature consume memory?**
+
   a. √? **When it is retired and disabled
   b. **When it is unretired and enabled
   c. **When it is retired and enabled
@@ -1105,6 +1192,7 @@ Firewall#
     it is installed passively
     it introduces no delay or overhead
 **Which security mechanism is this?**
+
   a. √? NIDS
   b. PIX
   c. IKE
@@ -1112,18 +1200,21 @@ Firewall#
   e. HMAC
 
 **What is the default policy between an administratively created zone and the self zone?**
+
   a. √ Permit
   b. Deny
   c. Inspect
   d. Log
 
 **Which of the following is true when NAT control is enabled?**
+
   a. Translation rules are not required, but will be performed if configured.
   b. Configuration of translation rules is not permitted.
   c. Translation rules are required for all transit traffic.
   d. √ Translation rules are required only for sessions initiated on a higher-security interface, bound for a lower-security interface.
 
 **_________ was used in features that support Cisco TrustSec by including the group in an extended ACL, which in turn can be used in an access rule.**
+
   a. ICMP-type
   b. User
   c. √? Security
@@ -1132,6 +1223,7 @@ Firewall#
 
 **You have decided to practice your CLI skills instead of using the ASDM interface to configure a security policy in the MPF.**
 **Which of the following should be configured first?**
+
   a. A class map
   b. √ A policy map
   c. A service policy
