@@ -619,13 +619,13 @@ https://www.cram.com/flashcards/14-understanding-firewall-fundamentals-7190521
 **How to setup ZPF from IOS?**
 https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-answers.html
 
-1. **Create security zones**
+**1. Create security zones**
 
-    R3(config)# zone security INSIDE
-    R3(config)# zone security CONFROOM
-    R3(config)# zone security INTERNET
+     R3(config)# zone security INSIDE
+     R3(config)# zone security CONFROOM
+     R3(config)# zone security INTERNET
 
-2. **Create security policies depends on zones and protocols (class maps)**
+**2. Create security policies depends on zones and protocols (class maps)**
 
     R3(config)# class-map type inspect match-any INSIDE_PROTOCOLS
     R3(config-cmap)# match protocol tcp
@@ -637,7 +637,7 @@ https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-an
     R3(config-cmap)# match protocol https
     R3(config-cmap)# match protocol dns
 
-3. **Create policy maps**
+**3. Create policy maps**
 
     R3(config)# policy-map type inspect INSIDE_TO_INTERNET
     R3(config-pmap)# class type inspect INSIDE_PROTOCOLS
@@ -646,7 +646,7 @@ https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-an
     R3(config-pmap)# class type inspect CONFROOM_PROTOCOLS
     R3(config-pmap-c)# inspect
 
-4. **Create zone pairs**
+**4. Create zone pairs**
 
     R3(config)# zone-pair security INSIDE_TO_INTERNET source INSIDE destination INTERNET
     R3(config)# zone-pair security CONFROOM_TO_INTERNET source CONFROOM destination INTERNET
@@ -658,7 +658,7 @@ https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-an
         Source-Zone CONFROOM  Destination-Zone INTERNET
         service-policy not configured
 
-5. **Applying Security Policies**
+**5. Applying Security Policies**
 
     R3(config)# zone-pair security INSIDE_TO_INTERNET
     R3(config-sec-zone-pair)# service-policy type inspect INSIDE_TO_INTERNET
@@ -675,7 +675,7 @@ https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-an
 
     R3#show policy-map type inspect zone-pair
 
-6. **Assign interfaces to zones**
+**6. Assign interfaces to zones**
 
     R3(config)# interface g0/0
     R3(config-if)# zone-member security CONFROOM
@@ -697,7 +697,9 @@ https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-an
 **How does PAT work?** Subset of NAT, though everyone doesn't get their own unique IP address. Keeps track of individual sessions on an array of ports
 
 **Define Static NAT:** one to one permanent mapping
+
 **Define Dynamic NAT:** pool of global addresses and only map devices need traffic
+
 **Define dynamic PAT:** a feature used for most users who access the internet. Combines benefits of dynamically assigning global addresses only when needed and uses overload so thousands of inside devices can be translated with PAT
 
 **Dynamic NAT/PAT is the best practice for multiple client situation?** True
