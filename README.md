@@ -607,13 +607,14 @@ https://www.cram.com/flashcards/14-understanding-firewall-fundamentals-7190521
  - cannot inspect encrypted packets
 
 **What makes Router self-zone different:**
-Purpose:** to control IP traffic that moves to the router's interfaces
-Application Inspection is not available for self-zone
-Session and rate limiting cannot be configured on self-zone
-Deny Telnet connectivity
-Allow HTTP connectivity
-Restrict SNMP
-Block ICMP from public internet
+
+ - Purpose: to control IP traffic that moves to the router's interfaces
+ - Application Inspection is not available for self-zone
+ - Session and rate limiting cannot be configured on self-zone
+ - Deny Telnet connectivity
+ - Allow HTTP connectivity
+ - Restrict SNMP
+ - Block ICMP from public internet
 
 **How to setup ZPF from IOS?**
 https://itexamanswers.net/4-4-1-2-lab-configuring-zone-based-policy-firewalls-answers.html
