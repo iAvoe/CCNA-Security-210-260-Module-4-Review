@@ -414,14 +414,18 @@ https://www.cram.com/flashcards/13-securing-routing-protocols-and-the-control-pl
     c. Rate-limiting SNMP traffic to reduce the impact on the CPU
     d. Throttling all traffic ingressing the device during heavy traffic periods until the CPU performance has improved
 
-**In the following CoPP access control list example, which traffic is being prevented from reaching the control plane?**
-Extended IP access list 123
- 10 deny tcp 192.168.1.0 0.0.0.255 any eq telnet
- 20 deny udp 192.168.1.0 0.0.0.255 any eq domain
- 30 permit tcp any any eq telnet
- 40 permit udp any any eq domain
- 50 deny ip any any
-a. Telnet traffic from the 192.168.1.0/24
+**Refering to the following CoPP access control list exhibits:**
+
+    Extended IP access list 123
+     10 deny tcp 192.168.1.0 0.0.0.255 any eq telnet
+     20 deny udp 192.168.1.0 0.0.0.255 any eq domain
+     30 permit tcp any any eq telnet
+     40 permit udp any any eq domain
+     50 deny ip any any
+     
+ **Which traffic is being prevented from reaching the control plane?**
+ 
+    a. Telnet traffic from the 192.168.1.0/24
     b. √ Telnet and DNS traffic from outside the 192.168.1.0./24 subnet
     c. Telnet and DNS traffic from the 192.168.1.0/24 subnet
     d. DNS traffic from the 192.168.1.0/24 subnet
