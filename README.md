@@ -1,5 +1,5 @@
 # CCNA-Security-210-260-Module-4-Review
-### 9 Securing Layer 2 Devices
+### 9 - Securing Layer 2 Devices
 https://www.cram.com/flashcards/9-securing-layer-2-devices-7190486
 
 **Which is the primary Layer 2 mechanism that allows multiple devices in the same VLAN to communicate with each other even though those devices are physically connected to different switches?**
