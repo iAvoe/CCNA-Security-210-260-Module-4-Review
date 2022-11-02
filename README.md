@@ -23,7 +23,8 @@ https://www.cram.com/flashcards/9-securing-layer-2-devices-7190486
     c. Root Guard
     d. Port security
 
-**What does STP root guard do? Enforces the root bridge placement in network:**
+**What does STP root guard do?** Enforces the root bridge placement in network.
+
 **Which one is not a best practice for security?**
 
     a. √ Leaving the native VLAN as VLAN 1
