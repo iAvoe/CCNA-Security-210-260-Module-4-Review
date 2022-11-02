@@ -3,85 +3,97 @@
 https://www.cram.com/flashcards/9-securing-layer-2-devices-7190486
 
 **Which is the primary Layer 2 mechanism that allows multiple devices in the same VLAN to communicate with each other even though those devices are physically connected to different switches?**
-a.	IP address
-b.	Default gateway
-c.	√ Trunk (802.1Q)
-d.	802.1D
+
+  a. IP address
+  b.	Default gateway
+  c.	√ Trunk (802.1Q)
+  d.	802.1D
 
 **How does a switch know about parallel Layer 2 paths?**
-a.	√ 802.1Q (trunk)
-b.	BPDU
-c.	CDP
-d.	NTP
+
+  a. √ 802.1Q (trunk)
+  b.	BPDU
+  c.	CDP
+  d.	NTP
 
 **Which one helps prevent CAM table (MAC address table) overflows?**
-a.	802.1w
-b.	√ BPDU Guard
-c.	Root Guard
-d.	Port security
+
+  a. 802.1w
+  b.	√ BPDU Guard
+  c.	Root Guard
+  d.	Port security
 
 **What does STP root guard do? Enforces the root bridge placement in network:**
 **Which one is not a best practice for security?
 a.	√ Leaving the native VLAN as VLAN 1
-b.	Shutting down all unused ports and placing them in an unused VLAN
-c.	Limiting the number of MAC addresses learned on a specific port
-d.	Disabling negotiation of switch port mode
+  b.	Shutting down all unused ports and placing them in an unused VLAN
+  c.	Limiting the number of MAC addresses learned on a specific port
+  d.	Disabling negotiation of switch port mode
 
 **What is the default # of MAC addr allowed on a switch port that is configured with port security?**
-a.	√ 1
-b.	5
-c.	15
-d.	Depends on the switch mode
+
+  a. √ 1
+  b.	5
+  c.	15
+  d.	Depends on the switch mode
 
 **Which two items normally have a one-to-one correlation?**
-a.	√ VLANs
-b.	Classful IP networks
-c.	√ IP subnetworks
-d.	Number of switches
-e.	Number of routers
+
+  a. √ VLANs
+  b.	Classful IP networks
+  c.	√ IP subnetworks
+  d.	Number of switches
+  e.	Number of routers
 
 **Typical method for a device in VLAN to reach another device in a 2nd VLAN?**
-a.	ARP for the remote device's MAC address
-b.	Use a remote default gateway
-c.	√ Use a local default gateway
-d.	Use trunking on the PC
+
+  a. ARP for the remote device's MAC address
+  b.	Use a remote default gateway
+  c.	√ Use a local default gateway
+  d.	Use trunking on the PC
 8
 **Which 2 configuration changes prevent users from jumping onto any VLAN they choose to join?**
-a.	√ Disabling negotiation of trunk ports
-b.	Using something else other than VLAN 1 as the "native" VLAN
-c.	Configuring the port connecting to the client as a trunk
-d.	√ Configuring the port connecting to the client as an access port
+
+  a. √ Disabling negotiation of trunk ports
+  b.	Using something else other than VLAN 1 as the "native" VLAN
+  c.	Configuring the port connecting to the client as a trunk
+  d.	√ Configuring the port connecting to the client as an access port
 
 **If you limit the number of MAC addresses learned on a port to 5, what benefits do you get from it? (Choose all that apply.)**
-a.	√ Protection for DHCP servers against starvation attacks
-b.	Protection against IP spoofing
-c.	Protection against VLAN hopping
-d.	Protection against MAC address spoofing
-e.	√ Protection against CAM table overflow attacks
+
+  a. √ Protection for DHCP servers against starvation attacks
+  b.	Protection against IP spoofing
+  c.	Protection against VLAN hopping
+  d.	Protection against MAC address spoofing
+  e.	√ Protection against CAM table overflow attacks
 
 **Why should you implement Root Guard on a switch?**
-a.	To prevent the switch from becoming the root
-b.	To prevent the switch from having any root ports
-c.	√ To prevent the switch from having specific root ports
-d.	To protect the switch against MAC address table overflows
+
+  a. To prevent the switch from becoming the root
+  b.	To prevent the switch from having any root ports
+  c.	√ To prevent the switch from having specific root ports
+  d.	To protect the switch against MAC address table overflows
 
 **Why should CDP be disabled on ports that face untrusted networks?**
-a.	CDP can be used as a DDoS vector.
-b.	√ CDP can be used as a reconnaissance tool to determine info about the device
-c.	Disabling it prevents the device from participating in spanning tree w/ untrusted devices.
-d.	CDP can conflict with LLDP on ports facing untrusted networks
+
+  a. CDP can be used as a DDoS vector.
+  b.	√ CDP can be used as a reconnaissance tool to determine info about the device
+  c.	Disabling it prevents the device from participating in spanning tree w/ untrusted devices.
+  d.	CDP can conflict with LLDP on ports facing untrusted networks
 
 **Which of the following is not a true statement for DHCP snooping?**
-a.	DHCP snooping validates DHCP messages received from untrusted sources, which filters invalid messages
-b.	DHCP snooping information is stored in a binding database.
-c.	√ DHCP snooping is enabled by default on all VLANs.
-d.	DHCP snooping rate-limits DHCP traffic from trusted and untrusted sources.
+
+  a. DHCP snooping validates DHCP messages received from untrusted sources, which filters invalid messages
+  b.	DHCP snooping information is stored in a binding database.
+  c.	√ DHCP snooping is enabled by default on all VLANs.
+  d.	DHCP snooping rate-limits DHCP traffic from trusted and untrusted sources.
 
 **Which of the following is not a true statement regarding dynamic ARP inspection (DAI)?**
-a.	DAI intercepts, logs, and discards ARP packets with invalid IP-to-MAC address bindings.
-b.	DAI helps to mitigate MITM attacks.
-c.	DAI determines validity of ARP packets based on IP-to-MAC address bindings found in the DHCP snooping database.
-d.	√ DAI is enabled on a per-interface basis
+
+  a. DAI intercepts, logs, and discards ARP packets with invalid IP-to-MAC address bindings.
+  b.	DAI helps to mitigate MITM attacks.
+  c.	DAI determines validity of ARP packets based on IP-to-MAC address bindings found in the DHCP snooping database.
+  d.	√ DAI is enabled on a per-interface basis
 
 **If there is no 802.1Q tag on the frame, what will the switch assume?** This frame originates from native VLAN
 
@@ -100,64 +112,74 @@ d.	√ DAI is enabled on a per-interface basis
 https://www.cram.com/flashcards/10-network-foundation-protection-7190492
 
 **Which one is not a core element addressed by Network Foundation Protection?**
-a.	Management plane
-b.	Control plane
-c.	Data plane
-d.	√ Executive plane
+
+  a. Management plane
+  b.	Control plane
+  c.	Data plane
+  d.	√ Executive plane
 
 **If you add authentication to your routing protocol so that only trusted authorized routers share information, which plane in the NFP are you securing?**
-a.	Management plane
-b.	√ Control plane
-c.	Data plane
-d.	Executive plane
+
+  a. Management plane
+  b.	√ Control plane
+  c.	Data plane
+  d.	Executive plane
 
 **If you use authentication and authorization services to control which administrators can access which networked devices and control what they are allowed to do, which primary plane of NFP are you protecting?**
-a.	√ Management plane
-b.	Control plane
-c.	Data plane
-d.	Executive plane
+
+  a. √ Management plane
+  b.	Control plane
+  c.	Data plane
+  d.	Executive plane
 
 **Which of the following is not a best practice to protect the management plane? (Choose all that apply.)**
-a.	√ HTTP
-b.	√ Telnet
-c.	HTTPS
-d.	SSH
+
+  a. √ HTTP
+  b.	√ Telnet
+  c.	HTTPS
+  d.	SSH
 
 **Which of the following is a way to implement role-based access control related to the management plane? (Choose all that apply.)**
-a.	√ Views
-b.	√ AAA services
-c.	Access lists
-d.	IPS
+
+  a. √ Views
+  b.	√ AAA services
+  c.	Access lists
+  d.	IPS
 
 **What do Control Plane Policing (CoPP) & Control-Plane Protection (CPPr) have in common? (Choose all that apply.)**
-a.	They both focus on data plane protection.
-b.	They both focus on management plane protection.
-c.	√ They both focus on control plane protection.
-d.	√ They both can identify traffic destined for the router that will likely require direct CPU resources to be used by the router
+
+  a. They both focus on data plane protection.
+  b.	They both focus on management plane protection.
+  c.	√ They both focus on control plane protection.
+  d.	√ They both can identify traffic destined for the router that will likely require direct CPU resources to be used by the router
 
 **Which type of attack can you mitigate by authenticating a routing protocol? (Choose all that apply.)**
-a.	√ MITM (reconnaissance + spoofing by hiding & forwarding inbetween 2 links)
-b.	√ Denial-of-service attack (halting system resources)
-c.	√ Reconnaissance attack (gathering information for vulnerability)
-d.	Spoofing attack (identifies as another by falsifying data)
+
+  a. √ MITM (reconnaissance + spoofing by hiding & forwarding inbetween 2 links)
+  b.	√ Denial-of-service attack (halting system resources)
+  c.	√ Reconnaissance attack (gathering information for vulnerability)
+  d.	Spoofing attack (identifies as another by falsifying data)
 
 **What is a significant difference between CoPP and CPPr?**
-a.	One works at Layer 3, and the other works at Layer 2.
-b.	√ CPPr can classify and act on more-specific traffic than CoPP.
-c.	CoPP can classify and act on more-specific traffic than CPPr.
-d.	One protects the data plane, and the other protects the management plane
+
+  a. One works at Layer 3, and the other works at Layer 2.
+  b.	√ CPPr can classify and act on more-specific traffic than CoPP.
+  c.	CoPP can classify and act on more-specific traffic than CPPr.
+  d.	One protects the data plane, and the other protects the management plane
 
 **Which of the following enables you to protect the data plane?**
-a.	√ IOS zone-based firewall
-b.	√ IPS
-c.	√ Access lists
-d.	√ Port security
+
+  a. √ IOS zone-based firewall
+  b.	√ IPS
+  c.	√ Access lists
+  d.	√ Port security
 
 **DHCP snooping protects which component of NFP?:**
-a.	Management plane
-b.	Control plane
-c.	√ Data plane
-d.	Executive plane
+
+  a. Management plane
+  b.	Control plane
+  c.	√ Data plane
+  d.	Executive plane
 
 **Define management plane:** protocols, traffic that administrator uses
 **Define control plane:** protocols, traffic that network devices use on their own automatically
@@ -358,22 +380,25 @@ https://www.cram.com/flashcards/13-securing-routing-protocols-and-the-control-pl
 **Control plane packets are handled by:** CPU
 
 **Which of the following functions is not handled by the control plane?**
-a.	BGP
-b.	RSVP
-c.	√ SSH (management plane)
-d.	ICMP
+
+  a. BGP
+  b.	RSVP
+  c.	√ SSH (management plane)
+  d.	ICMP
 
 **Which command provides information on receive adjacency traffic?**
-a.	show ip bgp
-b.	show processes cpu
-c.	show interfaces summary
-d.	√ show ip cef
+
+  a. show ip bgp
+  b.	show processes cpu
+  c.	show interfaces summary
+  d.	√ show ip cef
 
 **Control plane policing helps to protect the CPU by doing what?**
-a.	Diverting all control plane traffic to the data and management planes
-b.	√ Filtering and rate-limiting traffic destined to the control plane
-c.	Rate-limiting SNMP traffic to reduce the impact on the CPU
-d.	Throttling all traffic ingressing the device during heavy traffic periods until the CPU performance has improved
+
+  a. Diverting all control plane traffic to the data and management planes
+  b.	√ Filtering and rate-limiting traffic destined to the control plane
+  c.	Rate-limiting SNMP traffic to reduce the impact on the CPU
+  d.	Throttling all traffic ingressing the device during heavy traffic periods until the CPU performance has improved
 
 **In the following CoPP access control list example, which traffic is being prevented from reaching the control plane?**
 Extended IP access list 123
@@ -383,15 +408,16 @@ Extended IP access list 123
  40 permit udp any any eq domain
  50 deny ip any any
 a.	Telnet traffic from the 192.168.1.0/24
-b.	√ Telnet and DNS traffic from outside the 192.168.1.0./24 subnet
-c.	Telnet and DNS traffic from the 192.168.1.0/24 subnet
-d.	DNS traffic from the 192.168.1.0/24 subnet
+  b.	√ Telnet and DNS traffic from outside the 192.168.1.0./24 subnet
+  c.	Telnet and DNS traffic from the 192.168.1.0/24 subnet
+  d.	DNS traffic from the 192.168.1.0/24 subnet
 
 **Which of the following is not a sub-interface that can be leveraged as part of control plane protection?**
-a.	Host subinterface
-b.	√ Frame Relay subinterface
-c.	CEF-Exception subinterface
-d.	Transit subinterface
+
+  a. Host subinterface
+  b.	√ Frame Relay subinterface
+  c.	CEF-Exception subinterface
+  d.	Transit subinterface
 
 **Which line in the following OSPF configuration will not be required for MD5 auth to work?**
 interface GigabitEthernet0/1
@@ -406,27 +432,30 @@ router ospf 65000
  network 192.168.10.0 0.0.0.255 area 0
 !
 a.	ip ospf authentication message-digest
-b.	network 192.168.10.0 0.0.0.255 area 0
-c.	√ area 20 authentication message-digest
-d.	ip ospf message-digest-key 1 md5 CCNA
+  b.	network 192.168.10.0 0.0.0.255 area 0
+  c.	√ area 20 authentication message-digest
+  d.	ip ospf message-digest-key 1 md5 CCNA
 
 **Which of the following pairs of statements is true in terms of configuring MD5?**
-a.	Interface statements (OSPF, EIGRP) must be configured; use of key chain in OSPF
-b.	Router process (OSPF, EIGRP) must be configured; key chain in EIGRP
-c.	√ Router process (only for OSPF) must be configured; key chain in EIGRP
-d.	Router process (only for OSPF) must be configured; key chain in OSPF
+
+  a. Interface statements (OSPF, EIGRP) must be configured; use of key chain in OSPF
+  b.	Router process (OSPF, EIGRP) must be configured; key chain in EIGRP
+  c.	√ Router process (only for OSPF) must be configured; key chain in EIGRP
+  d.	Router process (only for OSPF) must be configured; key chain in OSPF
 
 **Which of the following statements is true?**
-a.	RIPv1 supports cleartext authentication, and RIPv2 supports MD5 authentication.
-b.	RIPv2 and OSPF make use of a key chain for authentication.
-c.	RIPv2 and EIGRP both require router process configuration for authentication.
-d.	√ RIPv2 and EIGRP both make use of a key chain for authentication.
+
+  a. RIPv1 supports cleartext authentication, and RIPv2 supports MD5 authentication.
+  b.	RIPv2 and OSPF make use of a key chain for authentication.
+  c.	RIPv2 and EIGRP both require router process configuration for authentication.
+  d.	√ RIPv2 and EIGRP both make use of a key chain for authentication.
 
 **What is needed to implement MD5 authentication for BGP?**
-a.	Interface and router process configuration
-b.	Interface and key chain configuration
-c.	√ Router process configuration
-d.	Router process and key chain configuration
+
+  a. Interface and router process configuration
+  b.	Interface and key chain configuration
+  c.	√ Router process configuration
+  d.	Router process and key chain configuration
 
 **What is process switched traffic?** Type of packets that are blocked to save CPU load
 **Define the 2 types of switched traffic:**
@@ -832,11 +861,12 @@ https://quizlet.com/226530774/cisco-ipsids-fundamentals-flash-cards/
   d. Other
 
 **Which of the following are properties directly associated with a signature? (Choose all that apply.)**
-a.	√ ASR (Alert Severity Rating)
-b.	ARR (Attack Relevancy Rating)
-c.	√ SFR (Signature Fidelity Rating)
-d.	TVR (Target Value Rating)
-e.	RR (Risk Rating)
+
+  a. √ ASR (Alert Severity Rating)
+  b.	ARR (Attack Relevancy Rating)
+  c.	√ SFR (Signature Fidelity Rating)
+  d.	TVR (Target Value Rating)
+  e.	RR (Risk Rating)
 
 Note:
 75—Low Asset Value
@@ -1230,3 +1260,4 @@ Firewall#
   d. An access policy
   e. A service map
   f. An access map
+
